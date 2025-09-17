@@ -2,8 +2,7 @@ from .schemas import customer_schema, customers_schema
 from flask import request, jsonify
 from marshmallow import ValidationError
 from sqlalchemy import select
-from app.models import Customer
-from app.extensions import db
+from app.models import Customer, db
 from . import customers_bp
 
 
